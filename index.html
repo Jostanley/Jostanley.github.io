@@ -1,13 +1,66 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
-</head>
-<body>
-    <h1>Hello, welcome to my GitHub page!</h1>
-    <p>This is a sample page for my website.</p>
+
+               </div>
+               <div id="bell">
+               <i class="fa-solid fa-bell"></i>
+               </div>
+               <div id="user-plus">
+               <i class=" fa-solid fa-user-plus"></i>
+               </div>
+               <div id="cart-plus">
+               <i class="fa-duotone fa-solid fa-cart-plus"></i>
+                
+            </div>
+            
+</div>
+            <div id="column1">
+                <div id="column3">
+                    <div id="searched">
+                 <input type ="search" id="search" placeholder="search">
+                 </div> 
+                
+             <i class="fa-solid">New<br>post</i>
+           
+             <div id="profil"></div>
+           </div>
+        
+                </div>
+                
+                <!--  --->
+            <div id="post-tread">
+                <div id="posted">post</div>
+                <div id="story">story</div>
+                </div>
+            </div>
+            <div id="post-body">
+                <div id="post-body"></div>
+            </div>
+            <div id="post-body">
+                <div id="post-body"></div>
+            </div>
+            
+            <!--  -->
+            <div id="functional">
+
+            </div> 
+            <input type="file" id="videoInput" accept="video/*" placeholder="+">
+<video id="videoPreview" width="320" height="240" controls></video>
+
+<script>
+  const videoInput = document.getElementById('videoInput');
+  const videoPreview = document.getElementById('videoPreview');
+
+  videoInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      videoPreview.src = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  });
+</script>   
+       </div>
+            
 </body>
 </html>
-
